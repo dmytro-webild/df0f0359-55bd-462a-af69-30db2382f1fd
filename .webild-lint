@@ -1,0 +1,10 @@
+src/components/Layout.tsx
+src/components/sections/about/AboutCentredStatementLogos.tsx
+src/components/sections/contact/ContactDarkFormCardTerminal.tsx
+src/components/sections/faq/FaqLimeAccordion.tsx
+src/components/sections/footer/FooterNotchReveal.tsx
+src/components/sections/gallery/GalleryParticleYard.tsx
+src/components/sections/hero/HeroParticleTruck.tsx
+src/components/sections/pricing/PricingTierCards.tsx
+src/components/sections/testimonial/TestimonialParticleRoad.tsx
+src/pages/HomePage.tsx

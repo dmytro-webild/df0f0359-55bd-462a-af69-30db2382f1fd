@@ -1,0 +1,354 @@
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;600&display=swap");
+@import "tailwindcss";
+@import "./styles/animations.css";
+@import "./styles/masks.css";
+
+@theme {
+  --breakpoint-lg: 55rem;
+}
+
+/* webild:theme-ai */
+:root {
+  --primary-cta: #0f3240;
+  --primary-cta-text: #ffffff;
+  --secondary-cta: #0b2029;
+  --secondary-cta-text: #e6f0f3;
+  --background-accent: #19e3f5;
+
+  --background: #04131a;
+  --foreground: #e6f0f3;
+  --card: #0b2029;
+  --card-foreground: var(--foreground);
+  --popover: var(--card);
+  --popover-foreground: var(--foreground);
+  --primary: var(--primary-cta);
+  --primary-foreground: var(--primary-cta-text);
+  --secondary: var(--secondary-cta);
+  --secondary-foreground: var(--secondary-cta-text);
+  --muted: #0b2029;
+  --muted-foreground: #98aeb6;
+  --accent: var(--background-accent);
+  --accent-foreground: #071c26;
+  --deep: #0f2a35;
+  --deep-foreground: #ffffff;
+  --destructive: #fb6b3c;
+  --destructive-foreground: #052424;
+  --border: #1b3640;
+  --input: #dadede;
+  --ring: var(--primary-cta);
+
+  --font-heading: "Unbounded", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-body: "Plus Jakarta Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-label: "Geist Mono", ui-monospace, Menlo, monospace;
+  --heading-weight: 400;
+  --heading-tracking: -0.04em;
+  --heading-leading: 1;
+  --text-display: clamp(3.625rem, 3.06rem + 2.32vw, 5.25rem);
+  --text-h1: clamp(2.5rem, 1.8rem + 2.857vw, 4.375rem);
+  --text-h2: clamp(1.875rem, 1.457rem + 1.714vw, 3rem);
+  --text-h3: clamp(1.5rem, 1.256rem + 1vw, 2.156rem);
+  --text-body-lg: clamp(1.125rem, 1.009rem + 0.476vw, 1.4375rem);
+  --text-body: clamp(1rem, 0.953rem + 0.19vw, 1.125rem);
+  --text-small: clamp(0.875rem, 0.851rem + 0.095vw, 0.9375rem);
+  --text-label: 0.8125rem;
+  --label-tracking: 0.18em;
+  --label-case: uppercase;
+
+  --gutter: clamp(1.25rem, 0.3625rem + 3.646vw, 3.5rem);
+  --max-w: 1280px;
+  --container: min(100% - 2 * var(--gutter), var(--max-w));
+  --section-space: clamp(5rem, 4.6rem + 1.1vw, 5.625rem);
+  --gap: clamp(1.25rem, 1.11rem + 0.57vw, 1.625rem);
+  --grid-columns: 12;
+
+  --radius: 0.5rem;
+  --radius-card: 1.5rem;
+  --radius-button: 0.5rem;
+  --radius-image: 0.75rem;
+
+  --ease-out: cubic-bezier(0.19, 1, 0.22, 1);
+  --ease-in-out: cubic-bezier(0.52, 0, 0, 1);
+  --dur-fast: 0.3s;
+  --dur-base: 0.7s;
+  --dur-slow: 1.2s;
+  --reveal-distance: 2rem;
+
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-deep: var(--deep);
+  --color-deep-foreground: var(--deep-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --font-sans: var(--font-body);
+  --font-mono: var(--font-label);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+    outline-color: color-mix(in srgb, var(--color-ring) 30%, transparent);
+  }
+
+  ::selection {
+    background: var(--accent);
+    color: var(--accent-foreground);
+  }
+
+  body {
+    margin: 0;
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: "Plus Jakarta Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    min-height: 100vh;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Unbounded", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: var(--heading-weight);
+    letter-spacing: var(--heading-tracking);
+    line-height: var(--heading-leading);
+  }
+}
+
+@layer components {
+  .btn-primary,
+  .btn-secondary {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    min-height: 2.625rem;
+    padding: 0.5rem min(1.458vw, 2.333rem);
+    border-radius: var(--radius-button);
+    font-family: var(--font-label);
+    font-size: 0.6875rem;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: 0.1125rem;
+    text-align: center;
+    text-transform: var(--label-case);
+    white-space: nowrap;
+    cursor: pointer;
+    transition:
+      color var(--dur-fast) cubic-bezier(0.39, 0.575, 0.565, 1),
+      background-color var(--dur-fast) cubic-bezier(0.39, 0.575, 0.565, 1);
+  }
+
+  .btn-primary::before,
+  .btn-secondary::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    z-index: -1;
+    background: var(--primary);
+    clip-path: inset(100% 0 0 0);
+    transition: clip-path var(--dur-base) var(--ease-out);
+  }
+
+  .btn-primary:hover,
+  .btn-secondary:hover,
+  .btn-primary:focus-visible,
+  .btn-secondary:focus-visible {
+    background-color: transparent;
+    transition:
+      color var(--dur-fast) cubic-bezier(0.39, 0.575, 0.565, 1),
+      background-color var(--dur-fast) cubic-bezier(0.39, 0.575, 0.565, 1) 0.2s;
+  }
+
+  .btn-primary:hover::before,
+  .btn-secondary:hover::before,
+  .btn-primary:focus-visible::before,
+  .btn-secondary:focus-visible::before {
+    clip-path: inset(0 0 0 0);
+  }
+
+  .btn-label {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+  }
+
+  .btn-label::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.1875rem;
+    width: 100%;
+    height: 1px;
+    background-color: currentColor;
+    transform: scaleX(0);
+    transform-origin: right center;
+    transition: transform var(--dur-base) var(--ease-out);
+  }
+
+  .btn-primary:hover .btn-label::after,
+  .btn-secondary:hover .btn-label::after,
+  .btn-primary:focus-visible .btn-label::after,
+  .btn-secondary:focus-visible .btn-label::after {
+    transform: scaleX(1);
+    transform-origin: left center;
+  }
+
+  .btn-primary {
+    background: var(--accent);
+    color: var(--accent-foreground);
+  }
+
+  .btn-primary:hover,
+  .btn-primary:focus-visible {
+    color: var(--accent);
+  }
+
+  .btn-secondary {
+    background: color-mix(in srgb, var(--foreground) 5%, transparent);
+    color: var(--foreground);
+  }
+
+  .btn-secondary:hover,
+  .btn-secondary:focus-visible {
+    color: var(--accent);
+  }
+
+  .btn-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-label);
+    font-size: var(--text-label);
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: var(--label-tracking);
+    text-transform: var(--label-case);
+    color: var(--foreground);
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 0% 1px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 0.3rem;
+    transition: background-size var(--dur-base) var(--ease-out);
+  }
+
+  .btn-link:hover {
+    background-size: 100% 1px;
+  }
+
+  [data-button="solid"] .btn-primary {
+    background: var(--primary);
+    color: var(--primary-foreground);
+  }
+
+  [data-button="solid"] .btn-primary::before,
+  [data-button="solid"] .btn-secondary::before {
+    background: var(--accent);
+  }
+
+  [data-button="solid"] .btn-primary:hover,
+  [data-button="solid"] .btn-secondary:hover,
+  [data-button="solid"] .btn-primary:focus-visible,
+  [data-button="solid"] .btn-secondary:focus-visible {
+    color: var(--accent-foreground);
+  }
+
+  [data-button="pill"] .btn-primary,
+  [data-button="pill"] .btn-secondary {
+    border-radius: 999px;
+    padding-inline: 1.75rem;
+  }
+
+  .kit-card {
+    background: var(--card);
+    color: var(--card-foreground);
+    border-radius: var(--radius-card);
+  }
+
+  [data-card="outline"] .kit-card {
+    background: transparent;
+    box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--foreground) 15%, transparent);
+  }
+
+  [data-card="deep"] .kit-card {
+    --foreground: var(--deep-foreground);
+    --card-foreground: var(--deep-foreground);
+    --muted-foreground: #98aeb6;
+    --primary: #0f3240;
+    --border: #1b3640;
+    background: var(--deep);
+    color: var(--deep-foreground);
+  }
+
+  .kit-pattern {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+  }
+
+  main:has(> .kit-pattern) {
+    position: relative;
+    isolation: isolate;
+  }
+
+  [data-pattern="crosses"] .kit-pattern {
+    display: block;
+    background-color: color-mix(in srgb, var(--foreground) 22%, transparent);
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cpath d='M60 54.5v11M54.5 60h11' stroke='black' stroke-width='1'/%3E%3C/svg%3E");
+    mask-size: 7.5rem 7.5rem;
+    mask-repeat: repeat;
+    mask-position: center top;
+  }
+
+  [data-pattern="grid"] .kit-pattern {
+    display: block;
+    background-image:
+      linear-gradient(to right, color-mix(in srgb, var(--foreground) 7%, transparent) 1px, transparent 1px),
+      linear-gradient(to bottom, color-mix(in srgb, var(--foreground) 7%, transparent) 1px, transparent 1px);
+    background-size: 7.5rem 7.5rem;
+    mask-image: radial-gradient(ellipse at 50% 0%, #000 0%, transparent 70%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-primary,
+  .btn-secondary,
+  .btn-primary::before,
+  .btn-secondary::before,
+  .btn-label::after,
+  .btn-link,
+  .kit-card {
+    transition: none;
+  }
+}
