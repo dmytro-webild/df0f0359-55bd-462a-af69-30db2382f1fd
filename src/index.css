@@ -10,32 +10,32 @@
 
 /* webild:theme-ai */
 :root {
-  --primary-cta: #0f3240;
+  --primary-cta: #e60000;
   --primary-cta-text: #ffffff;
-  --secondary-cta: #0b2029;
-  --secondary-cta-text: #e6f0f3;
-  --background-accent: #19e3f5;
+  --secondary-cta: #000000;
+  --secondary-cta-text: #ffffff;
+  --background-accent: #e60000;
 
-  --background: #04131a;
-  --foreground: #e6f0f3;
-  --card: #0b2029;
-  --card-foreground: var(--foreground);
-  --popover: var(--card);
-  --popover-foreground: var(--foreground);
+  --background: #ffffff;
+  --foreground: #0a0a0a;
+  --card: #ffffff;
+  --card-foreground: #0a0a0a;
+  --popover: #ffffff;
+  --popover-foreground: #0a0a0a;
   --primary: var(--primary-cta);
   --primary-foreground: var(--primary-cta-text);
   --secondary: var(--secondary-cta);
   --secondary-foreground: var(--secondary-cta-text);
-  --muted: #0b2029;
-  --muted-foreground: #98aeb6;
+  --muted: #f4f4f6;
+  --muted-foreground: #52525b;
   --accent: var(--background-accent);
-  --accent-foreground: #071c26;
-  --deep: #0f2a35;
+  --accent-foreground: #ffffff;
+  --deep: #0a0a0a;
   --deep-foreground: #ffffff;
-  --destructive: #fb6b3c;
-  --destructive-foreground: #052424;
-  --border: #1b3640;
-  --input: #dadede;
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
+  --border: #e4e4e7;
+  --input: #e4e4e7;
   --ring: var(--primary-cta);
 
   --font-heading: "Unbounded", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -233,13 +233,13 @@
   }
 
   .btn-secondary {
-    background: color-mix(in srgb, var(--foreground) 5%, transparent);
-    color: var(--foreground);
+    background: var(--secondary);
+    color: var(--secondary-foreground);
   }
 
   .btn-secondary:hover,
   .btn-secondary:focus-visible {
-    color: var(--accent);
+    color: var(--accent-foreground);
   }
 
   .btn-link {

@@ -1,46 +1,92 @@
 import HeroParticleTruck from "@/components/sections/hero/HeroParticleTruck";
 import AboutCentredStatementLogos from "@/components/sections/about/AboutCentredStatementLogos";
 import PricingTierCards from "@/components/sections/pricing/PricingTierCards";
-import GalleryParticleYard from "@/components/sections/gallery/GalleryParticleYard";
-import TestimonialParticleRoad from "@/components/sections/testimonial/TestimonialParticleRoad";
 import FaqLimeAccordion from "@/components/sections/faq/FaqLimeAccordion";
 import ContactDarkFormCardTerminal from "@/components/sections/contact/ContactDarkFormCardTerminal";
-import ParticleYardStage from "@/components/kit/ParticleYardStage";
-import LoaderNotchSplit from "@/components/loaders/LoaderNotchSplit";
 
 export default function HomePage() {
   return (
     <>
-      <ParticleYardStage
-        introDelay={2.1}
-        variant="auto"
-      />
-
-      <LoaderNotchSplit
-        brand="Exclusive Sliding"
-      />
-
-      <div id="home" data-webild-section="HeroParticleTruck" data-webild-section-id="HeroParticleTruck-1" data-section="home" data-scene>
+      <div id="home" data-webild-section="HeroParticleTruck" data-webild-section-id="HeroParticleTruck-1" data-section="home">
         <HeroParticleTruck
-          label="Performance Truck Meet"
-          title="High horsepower meets sideways action"
-          description="Exclusive Sliding brings together high-output custom builds, drift trucks, and track drivers for pure adrenaline and precision control."
+          label="OFFICIAL TRUCK MEET 2026"
+          title="EXCLUSIVE SLIDING"
+          description="High horsepower custom builds, show & shine showcases, and tire-smoking drift action. Experience the ultimate truck event."
           primaryButton={{
-            text: "Register to drive",
-            href: "#contact"
+            text: "Get Tickets",
+            href: "#tickets"
           }}
           secondaryButton={{
-            text: "Explore trucks",
-            href: "#pricing"
+            text: "Ticket Tiers",
+            href: "#tickets"
           }}
-          introDelay={2.1}
+          introDelay={0.1}
+        />
+      </div>
+
+      <div id="tickets" data-webild-section="PricingTierCards" data-webild-section-id="PricingTierCards-1" data-section="tickets">
+        <PricingTierCards
+          title="TICKET OPTIONS"
+          items={[
+            {
+              label: "Show & Shine Pass",
+              title: "Show & Shine",
+              price: "$20",
+              period: "per pass",
+              description: "General admission pass including Show & Shine vehicle display entry, voting access, and spectator grounds.",
+              features: [
+                "Show & Shine Arena entry",
+                "Spectator trackside viewing access",
+                "Voting ballot for Best Build awards",
+                "Event decal & sticker pack"
+              ],
+              cta: {
+                text: "Select $20 Pass",
+                href: "#contact"
+              }
+            },
+            {
+              label: "VIP Pass",
+              title: "VIP",
+              price: "$40",
+              period: "per pass",
+              description: "VIP spectator pass featuring reserved trackside lounge access, exclusive merch pack, and priority gate entry.",
+              features: [
+                "Priority VIP gate entrance",
+                "Reserved trackside VIP lounge",
+                "Official Exclusive Sliding t-shirt & lanyard",
+                "Full paddock & pit lane access"
+              ],
+              cta: {
+                text: "Select $40 VIP",
+                href: "#contact"
+              }
+            },
+            {
+              label: "VIP All-Access",
+              title: "VIP",
+              price: "$80",
+              period: "per pass",
+              description: "Ultimate VIP pass with passenger hot lap ride-along experience, garage bay access, and driver meet-and-greet.",
+              features: [
+                "All benefits from $40 VIP Pass",
+                "Passenger hot lap / ride-along pass",
+                "Exclusive garage & staging access",
+                "Driver meet & greet + VIP photo pass"
+              ],
+              cta: {
+                text: "Select $80 VIP",
+                href: "#contact"
+              }
+            }
+          ]}
         />
       </div>
 
       <div id="about" data-webild-section="AboutCentredStatementLogos" data-webild-section-id="AboutCentredStatementLogos-1" data-section="about">
         <AboutCentredStatementLogos
           label="About The Meet"
-          title="We unite aggressive trucks for an experience built purely around control, smoke, and sliding."
+          title="Uniting custom truck builds, tire smoke, and high-angle control on the tarmac."
           items={[
             {
               name: "Apex Performance"
@@ -61,108 +107,12 @@ export default function HomePage() {
         />
       </div>
 
-      <div id="pricing" data-webild-section="PricingTierCards" data-webild-section-id="PricingTierCards-1" data-section="pricing" data-gallery>
-        <PricingTierCards
-          title="Built for the paddock and the track"
-          items={[
-            {
-              label: "Street Spec",
-              title: "Engine & Angle Specs",
-              description: "High-output engine bays paired with custom steering angle kits for controlled tarmac entry and continuous high revs.",
-              features: [
-                "High-output twin-turbo V8 setups",
-                "Custom steering angle kits",
-                "Trackside inspection prep"
-              ],
-              imageSrc: "https://img.b2bpic.net/free-photo/mechanic-examining-car_1170-1330.jpg",
-              imageAlt: "Mechanic examining a car",
-              cta: {
-                text: "Register Driver",
-                href: "#contact"
-              }
-            },
-            {
-              label: "Pro Drift",
-              title: "Full Chassis Prep",
-              description: "Reinforced drift chassis built for high-angle slides, cage-reinforced cockpits, and full night drift lighting design.",
-              features: [
-                "Full roll cage reinforcement",
-                "Adjustable coilovers and angle kits",
-                "Custom LED night drift setups"
-              ],
-              imageSrc: "https://img.b2bpic.net/free-photo/female-mechanic-repairing-car_1170-1409.jpg",
-              imageAlt: "Female mechanic repairing a car",
-              cta: {
-                text: "Register Driver",
-                href: "#contact"
-              }
-            },
-            {
-              label: "Unrestricted",
-              title: "Supercharged Builds",
-              description: "Unrestricted performance builds pushing 900hp with long-travel suspension engineered for high impact asphalt drift runs.",
-              features: [
-                "Max horsepower up to 900hp",
-                "Long-travel suspension setup",
-                "Trackside shredded rubber testing"
-              ],
-              imageSrc: "https://img.b2bpic.net/free-photo/bohemian-personalities-going-adventure-together_23-2149623204.jpg",
-              imageAlt: "Bohemian personalities going on adventure together",
-              cta: {
-                text: "Join Paddock",
-                href: "#contact"
-              }
-            }
-          ]}
-        />
-      </div>
-
-      <div id="work" data-webild-section="GalleryParticleYard" data-webild-section-id="GalleryParticleYard-1" data-section="work">
-        <GalleryParticleYard
-          label="The Impact"
-          title="Proven on the pavement"
-          description="Numbers built across seasons of sideways runs."
-          items={[
-            {
-              value: 120,
-              suffix: "+",
-              label: "Active drivers"
-            },
-            {
-              value: 45,
-              label: "Trophies awarded"
-            },
-            {
-              value: 900,
-              suffix: "hp",
-              label: "Max horsepower"
-            },
-            {
-              value: 10,
-              suffix: "k+",
-              label: "Fans in attendance"
-            }
-          ]}
-        />
-      </div>
-
-      <div id="testimonial-particle-road-1" data-webild-section="TestimonialParticleRoad" data-webild-section-id="TestimonialParticleRoad-1" data-section="testimonial-particle-road-1">
-        <TestimonialParticleRoad
-          label="From the Paddock"
-          quote="The track layout lets us slide at full speed with total control. Best truck event of the year."
-          name="Hannah Hughes"
-          role="Lead Drift Driver"
-          company="Hughes Drift Co"
-          avatarSrc="https://img.b2bpic.net/free-photo/woman-posing-together-retro-style-inside-car_23-2149525856.jpg"
-        />
-      </div>
-
-      <div id="faq-lime-accordion-1" data-webild-section="FaqLimeAccordion" data-webild-section-id="FaqLimeAccordion-1" data-section="faq-lime-accordion-1">
+      <div id="faq" data-webild-section="FaqLimeAccordion" data-webild-section-id="FaqLimeAccordion-1" data-section="faq">
         <FaqLimeAccordion
           label="Got Questions?"
-          title="Before you arrive"
-          description="Everything you need to know about spectator passes, tech checks, and track access."
-          contactLabel="Need track info?"
+          title="Ticket & Event Information"
+          description="Everything you need to know about spectator tickets, VIP perks, gate times, and parking."
+          contactLabel="Need event info?"
           contactTitle="Talk directly with our event coordination crew."
           contactButton={{
             text: "Contact event crew",
@@ -170,20 +120,20 @@ export default function HomePage() {
           }}
           items={[
             {
-              title: "Can I bring my own truck to slide?",
-              description: "Yes. Exclusive Sliding is open to high-performance custom truck builds that pass our mandatory trackside technical inspection."
+              title: "What does the $20 Show & Shine ticket include?",
+              description: "The $20 Show & Shine ticket grants you full access to the truck showcase arena, spectator viewing areas, event voting ballot, and general parking."
             },
             {
-              title: "What are the driver entry and safety requirements?",
-              description: "Reserve entry beforehand. All vehicles must pass safety checks covering battery security, helmet standards, harness mounts, and fluid containment."
+              title: "What is included with the $40 VIP ticket?",
+              description: "The $40 VIP ticket includes fast-track gate entry, access to the reserved trackside VIP lounge, full paddock/pit access, and an official event t-shirt & lanyard."
             },
             {
-              title: "Is drifting experience required for all runs?",
-              description: "No. We organize run groups for different skill levels, including dedicated novice drift pits alongside high-horsepower pro tandems."
+              title: "What extra perks come with the $80 VIP ticket?",
+              description: "The $80 VIP ticket includes all VIP perks plus a passenger hot-lap ride-along experience, garage staging access, and an exclusive driver meet-and-greet session."
             },
             {
-              title: "When do gates open for spectators and drivers?",
-              description: "Gates open Saturday from 8:00 AM to 10:00 PM at 742 Irwindale Ave. Drivers should arrive early for tech inspection."
+              title: "When do gates open for spectators and vehicles?",
+              description: "Gates open Saturday from 8:00 AM to 10:00 PM. VIP pass holders and Show & Shine entries receive priority gate access."
             }
           ]}
         />
@@ -191,32 +141,31 @@ export default function HomePage() {
 
       <div id="contact" data-webild-section="ContactDarkFormCardTerminal" data-webild-section-id="ContactDarkFormCardTerminal-1" data-section="contact">
         <ContactDarkFormCardTerminal
-          label="Get Involved"
-          title="Secure your spot on the grid"
-          description="Ready to hit the tarmac for the upcoming performance truck meet in Irwindale."
-          itemsTitle="Registration process"
+          label="Reserve Passes"
+          title="Secure your Exclusive Sliding ticket"
+          description="Select your ticket option to confirm your spot for the upcoming truck meet."
+          itemsTitle="Ticket reservation steps"
           items={[
-            "Select driver or spectator registration",
-            "Receive paddock access details via email",
-            "Check in at Irwindale Ave entrance"
+            "Select your ticket option ($20, $40, or $80 VIP)",
+            "Receive digital pass confirmation via email",
+            "Show confirmation at main gate for wristband entry"
           ]}
-          note="Limited paddock spots available"
+          note="Limited VIP passes available"
           topics={[
-            "Pro Driver Registration",
-            "Spectator Pass",
-            "Paddock VIP Access",
-            "Media & Press Pass"
+            "$20 Show & Shine Pass",
+            "$40 VIP Pass",
+            "$80 VIP All-Access Pass"
           ]}
-          submitText="Register now"
+          submitText="Reserve Ticket Now"
           labels={{
             name: "Full name",
-            role: "Driver or spectator",
+            role: "Attendee type",
             phone: "Phone number",
             email: "Email address",
-            company: "Team or build name",
-            topic: "Registration category"
+            company: "Vehicle / Team name (optional)",
+            topic: "Select ticket option"
           }}
-          successText="Thank you! We will confirm your registration details via email shortly."
+          successText="Thank you! Your ticket reservation has been received. Check your email for pass details."
           placeholders={{
             name: "",
             role: "",
