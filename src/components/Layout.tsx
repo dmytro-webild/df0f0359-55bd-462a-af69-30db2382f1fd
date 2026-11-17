@@ -31,8 +31,8 @@ export default function Layout() {
             href: "#tickets"
           }}
           secondaryButton={{
-            text: "Contact Crew",
-            href: "#contact"
+            text: "Call Crew: 812 800 8244",
+            href: "tel:8128008244"
           }}
         />
       </header>
@@ -42,7 +42,7 @@ export default function Layout() {
       <footer data-webild-section="Footer" data-section="footer">
         <FooterNotchReveal
           brand="EXCLUSIVE SLIDING"
-          note="The premier truck meet. High-horsepower custom builds, show & shine competition, VIP paddock passes, and high-energy sliding action."
+          note="The premier truck meet. Call/text crew: 812 800 8244. High-horsepower custom builds, show & shine competition, VIP paddock passes, and high-energy sliding action."
           columns={[
             {
               title: "Event",
@@ -65,7 +65,11 @@ export default function Layout() {
               title: "Community",
               links: [
                 {
-                  text: "Contact Crew",
+                  text: "Call Crew: 812 800 8244",
+                  href: "tel:8128008244"
+                },
+                {
+                  text: "Contact Form",
                   href: "#contact"
                 },
                 {
