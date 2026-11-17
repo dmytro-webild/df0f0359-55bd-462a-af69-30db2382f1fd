@@ -535,7 +535,7 @@ export default function HomeTicketsSection() {
                   {/* Venmo */}
                   {paymentMethod === "venmo" && (
                     <div className="rounded-xl border border-sky-600/40 bg-sky-950/30 p-3 text-xs text-zinc-300">
-                      Transfer <strong>${totalPrice}</strong> to Venmo <span className="font-mono text-white font-bold">@ExclusiveSliding</span>.
+                      Transfer <strong>${totalPrice}</strong> to Venmo <span className="font-mono text-white font-bold">@jayden-miller-67</span>.
                     </div>
                   )}
 
