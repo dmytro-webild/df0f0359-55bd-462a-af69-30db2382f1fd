@@ -38,7 +38,7 @@ export default function Layout() {
       <footer data-webild-section="Footer" data-section="footer">
         <FooterNotchReveal
           brand="EXCLUSIVE SLIDING"
-          note="The premier truck meet. Custom builds, show & shine competition, VIP paddock passes & official Exclusive Sliding gear. Call/text 812-800-8244 or pay passes via Cash App ($ExclusiveSliding), Cards & Cash."
+          note="The premier truck meet. Custom builds, show & shine competition, VIP paddock passes & official Exclusive Sliding gear. Call/text 812-800-8244 or pay passes via Cash App ($jaydenmilliee07), Cards & Cash."
           columns={[
             {
               title: "Tickets & Gear",
@@ -69,7 +69,7 @@ export default function Layout() {
                   href: "tel:8128008244"
                 },
                 {
-                  text: "Cash App ($ExclusiveSliding)",
+                  text: "Cash App ($jaydenmilliee07)",
                   href: "/tickets"
                 },
                 {
