@@ -91,7 +91,7 @@ export default function HomePage() {
             },
             {
               title: "What extra perks come with the $80 Vendor pass?",
-              description: "The $80 Vendor pass includes exclusive vendor booth placement opens at 11am"
+              description: "The $80 Vendor pass includes exclusive vendor booth placement opens at 10am"
             },
             {
               title: "When do gates open for spectators and vehicles?",
