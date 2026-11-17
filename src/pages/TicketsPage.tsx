@@ -57,15 +57,15 @@ const PASS_OPTIONS: PassOption[] = [
   },
   {
     id: "vip-all-access",
-    name: "VIP All-Access",
+    name: "vendor",
     price: 80,
-    badge: "ULTIMATE EXPERIENCE",
-    description: "Ultimate VIP pass with passenger hot lap ride-along experience, garage bay access, and driver meet-and-greet.",
+    badge: "vendor pass",
+    description: "Ultimate vendor pass",
     features: [
-      "Passenger hot lap / ride-along pass",
-      "Exclusive garage & pit staging access",
-      "Driver meet-and-greet + VIP photo pass",
-      "Vendor booth pass + official t-shirt voucher"
+      "Exclusive vendor booth",
+      "",
+      "",
+      ""
     ]
   }
 ];
