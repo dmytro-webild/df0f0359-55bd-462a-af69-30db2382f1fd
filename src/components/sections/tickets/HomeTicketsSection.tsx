@@ -63,9 +63,9 @@ const PASS_OPTIONS: PassOption[] = [
     description: "Ultimate vendor booth pass & garage staging area access.",
     features: [
       "Exclusive vendor booth placement",
-      "Full trackside paddock access",
-      "Passenger hot-lap & garage staging",
-      "Priority sponsor branding placement"
+      "Full trackside access",
+      "Priority sponsor branding placement",
+      ""
     ]
   }
 ];
