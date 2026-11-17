@@ -31,7 +31,7 @@ export default function Layout() {
             href: "#tickets"
           }}
           secondaryButton={{
-            text: "Call Crew: 812-800-8244",
+            text: "Call Crew",
             href: "tel:8128008244"
           }}
         />
