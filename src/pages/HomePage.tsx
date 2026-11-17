@@ -113,10 +113,10 @@ export default function HomePage() {
           title="Ticket & Event Information"
           description="Everything you need to know about spectator tickets, VIP perks, gate times, and parking."
           contactLabel="Need event info?"
-          contactTitle="Talk directly with our event coordination crew."
+          contactTitle="Talk directly with our event coordination crew at 812 800 8244."
           contactButton={{
-            text: "Contact event crew",
-            href: "#contact"
+            text: "Call Crew: 812 800 8244",
+            href: "tel:8128008244"
           }}
           items={[
             {
@@ -141,16 +141,17 @@ export default function HomePage() {
 
       <div id="contact" data-webild-section="ContactDarkFormCardTerminal" data-webild-section-id="ContactDarkFormCardTerminal-1" data-section="contact">
         <ContactDarkFormCardTerminal
-          label="Reserve Passes"
+          label="Reserve Passes & Contact Crew"
           title="Secure your Exclusive Sliding ticket"
-          description="Select your ticket option to confirm your spot for the upcoming truck meet."
-          itemsTitle="Ticket reservation steps"
+          description="Select your ticket option below or call/text the crew directly at 812 800 8244."
+          itemsTitle="Crew Contact & Ticket Steps"
           items={[
+            "Direct Crew Line: 812 800 8244",
             "Select your ticket option ($20, $40, or $80 VIP)",
             "Receive digital pass confirmation via email",
             "Show confirmation at main gate for wristband entry"
           ]}
-          note="Limited VIP passes available"
+          note="Crew Line: 812 800 8244 • Limited VIP passes available"
           topics={[
             "$20 Show & Shine Pass",
             "$40 VIP Pass",
@@ -165,11 +166,11 @@ export default function HomePage() {
             company: "Vehicle / Team name (optional)",
             topic: "Select ticket option"
           }}
-          successText="Thank you! Your ticket reservation has been received. Check your email for pass details."
+          successText="Thank you! Your ticket reservation has been received. Check your email or call 812 800 8244 for pass details."
           placeholders={{
             name: "",
             role: "",
-            phone: "",
+            phone: "812 800 8244",
             email: "",
             company: "",
             topic: ""
