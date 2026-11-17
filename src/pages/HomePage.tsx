@@ -69,7 +69,7 @@ export default function HomePage() {
               period: "per pass",
               description: "Ultimate VIP pass with passenger hot lap ride-along experience, garage bay access, and driver meet-and-greet.",
               features: [
-                "ec ",
+                "Exclusive vendor booth",
                 "Passenger hot lap / ride-along pass",
                 "Exclusive garage & staging access",
                 "Driver meet & greet + VIP photo pass"
