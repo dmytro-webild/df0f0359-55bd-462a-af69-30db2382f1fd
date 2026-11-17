@@ -57,20 +57,20 @@ const PASS_OPTIONS: PassOption[] = [
   },
   {
     id: "vip-all-access",
-    name: "vendor",
+    name: "Vendor Pass",
     price: 80,
-    badge: "vendor pass",
-    description: "Ultimate vendor pass",
+    badge: "VENDOR PASS",
+    description: "Ultimate vendor booth pass & garage staging area access.",
     features: [
-      "Exclusive vendor booth",
-      "",
-      "",
-      ""
+      "Exclusive vendor booth placement",
+      "Full trackside paddock access",
+      "Passenger hot-lap ride-along",
+      "Priority sponsor branding placement"
     ]
   }
 ];
 
-type PaymentMethod = "cashapp" | "card" | "venmo" | "gate";
+type PaymentMethod = "gate" | "cashapp" | "card" | "venmo";
 
 interface IssuedTicket {
   ticketCode: string;
@@ -86,9 +86,9 @@ interface IssuedTicket {
 }
 
 export default function TicketsPage() {
-  const [selectedPassId, setSelectedPassId] = useState<string>("vip");
+  const [selectedPassId, setSelectedPassId] = useState<string>("show-shine");
   const [quantity, setQuantity] = useState<number>(1);
-  const [paymentMethod, setPaymentMethod] = useState<PaymentMethod>("cashapp");
+  const [paymentMethod, setPaymentMethod] = useState<PaymentMethod>("gate");
 
   // Form Fields
   const [name, setName] = useState<string>("");
