@@ -27,7 +27,7 @@ export default function HomePage() {
 
         <MovingClouds3D className="z-[2] opacity-100" />
         <HeroParticleTruck
-          label="CREW PHONE: 812-800-8244 | CASH APP & CARDS ACCEPTED"
+          label="CREW PHONE: 812-800-8244 | sr-62 E Charlestown in 47111"
           title="EXCLUSIVE SLIDING"
           description="if your looking for custom builds, show & shine showcases,burn outs, vip, vendors, then this is the show for you!"
           secondaryButton={{
