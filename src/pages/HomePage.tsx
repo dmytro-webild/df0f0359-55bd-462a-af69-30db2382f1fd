@@ -87,7 +87,7 @@ export default function HomePage() {
             },
             {
               title: "What is included with the $40 VIP ticket?",
-              description: "The $40 VIP ticket accese to vendors, better parking, closer to everything"
+              description: "The $40 VIP ticket accese to vendors, better parking, closer to everything opens at 12am"
             },
             {
               title: "What extra perks come with the $80 Vendor pass?",
