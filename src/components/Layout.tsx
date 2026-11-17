@@ -10,25 +10,29 @@ export default function Layout() {
           brand="EXCLUSIVE SLIDING"
           navItems={[
             {
-              name: "Tickets",
-              href: "#tickets"
+              name: "Home",
+              href: "/"
             },
             {
-              name: "About Meet",
-              href: "#about"
+              name: "Online Tickets",
+              href: "/tickets"
+            },
+            {
+              name: "Exclusive Merch",
+              href: "/merch"
             },
             {
               name: "FAQ",
-              href: "#faq"
+              href: "/#faq"
             },
             {
-              name: "Contact",
-              href: "#contact"
+              name: "Contact Crew",
+              href: "/#contact"
             }
           ]}
           primaryButton={{
-            text: "Get Tickets",
-            href: "#tickets"
+            text: "Buy Tickets",
+            href: "/tickets"
           }}
         />
       </header>
@@ -38,39 +42,47 @@ export default function Layout() {
       <footer data-webild-section="Footer" data-section="footer">
         <FooterNotchReveal
           brand="EXCLUSIVE SLIDING"
-          note="The premier truck meet. High-horsepower custom builds, show & shine competition, VIP paddock passes. Call/text 812-800-8244 for info or pay passes via Cash App ($ExclusiveSliding), Cards & Cash."
+          note="The premier truck meet. Custom builds, show & shine competition, VIP paddock passes & official Exclusive Sliding gear. Call/text 812-800-8244 or pay passes via Cash App ($ExclusiveSliding), Cards & Cash."
           columns={[
             {
-              title: "Event",
+              title: "Tickets & Gear",
               links: [
                 {
-                  text: "Ticket Options",
-                  href: "#tickets"
+                  text: "Online Ticket Portal",
+                  href: "/tickets"
                 },
                 {
-                  text: "About The Meet",
-                  href: "#about"
+                  text: "Show & Shine Pass ($20)",
+                  href: "/tickets"
                 },
                 {
-                  text: "Event FAQ",
-                  href: "#faq"
+                  text: "VIP Passes ($40 - $80)",
+                  href: "/tickets"
+                },
+                {
+                  text: "Exclusive Sliding Merch",
+                  href: "/merch"
                 }
               ]
             },
             {
-              title: "Community",
+              title: "Crew & Support",
               links: [
                 {
                   text: "Call/Text Crew (812-800-8244)",
                   href: "tel:8128008244"
                 },
                 {
-                  text: "Show & Shine Info",
-                  href: "#tickets"
+                  text: "Cash App ($ExclusiveSliding)",
+                  href: "/tickets"
                 },
                 {
-                  text: "VIP Access",
-                  href: "#tickets"
+                  text: "Event FAQ",
+                  href: "/#faq"
+                },
+                {
+                  text: "Contact & Location",
+                  href: "/#contact"
                 }
               ]
             }

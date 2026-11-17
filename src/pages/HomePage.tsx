@@ -14,7 +14,7 @@ export default function HomePage() {
           description="if your looking for custom builds, show & shine showcases,burn outs, vip, vendors, then this is the show for you!"
           primaryButton={{
             text: "Get Tickets",
-            href: "#tickets"
+            href: "/tickets"
           }}
           secondaryButton={{
             text: "Call Crew: 812-800-8244",
@@ -42,7 +42,7 @@ export default function HomePage() {
               ],
               cta: {
                 text: "Select $20 Pass",
-                href: "#contact"
+                href: "/tickets"
               }
             },
             {
@@ -59,7 +59,7 @@ export default function HomePage() {
               ],
               cta: {
                 text: "Select $40 VIP",
-                href: "#contact"
+                href: "/tickets"
               }
             },
             {
@@ -76,7 +76,7 @@ export default function HomePage() {
               ],
               cta: {
                 text: "Select $80 VIP",
-                href: "#contact"
+                href: "/tickets"
               }
             }
           ]}
