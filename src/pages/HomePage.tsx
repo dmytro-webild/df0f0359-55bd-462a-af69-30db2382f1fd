@@ -36,7 +36,7 @@ export default function HomePage() {
               description: "General admission pass including Show & Shine vehicle display entry, voting access, and spectator grounds.",
               features: [
                 "Show & Shine Arena entry",
-                "Spectator trackside viewing access",
+                "Show and shine parking",
                 "",
                 "Access  to vendors"
               ],
