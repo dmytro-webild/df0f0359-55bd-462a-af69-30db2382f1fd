@@ -483,7 +483,7 @@ export default function HomeTicketsSection() {
                           onClick={handleCopyCashApp}
                           className="inline-flex items-center gap-1 font-mono text-white bg-emerald-900/80 px-2 py-0.5 rounded border border-emerald-600/50 text-[10px]"
                         >
-                          $jaydenmilliee07 {copiedCashApp ? "✓ Copied" : "Copy"}
+                          $ExclusiveSliding {copiedCashApp ? "✓ Copied" : "Copy"}
                         </button>
                       </div>
                       <input
