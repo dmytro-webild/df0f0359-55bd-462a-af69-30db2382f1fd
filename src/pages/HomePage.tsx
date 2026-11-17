@@ -9,7 +9,7 @@ export default function HomePage() {
     <>
       <div id="home" data-webild-section="HeroParticleTruck" data-webild-section-id="HeroParticleTruck-1" data-section="home">
         <HeroParticleTruck
-          label="contact number"
+          label="contact number 812-800-8244"
           title="EXCLUSIVE SLIDING"
           description="if your looking for custom builds, show & shine showcases,burn outs, vip, vendors, then this is the show for you!"
           primaryButton={{
