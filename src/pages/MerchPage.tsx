@@ -46,7 +46,7 @@ const PRODUCTS: Product[] = [
     features: ["Heavy-duty Weatherproof Vinyl", "UV & Power-wash Resistant", "Uploaded Logo Artwork"],
     gradient: "from-zinc-950 via-red-950 to-black",
     iconType: "decal",
-    imageSrc: "https://storage.googleapis.com/webild/users/user_3MF7lvQTiQCEdNjZC6DsouvE9DP/uploaded-1794939987140-7b7th5qm.png",
+    imageSrc: "https://storage.googleapis.com/webild/users/user_3MF7lvQTiQCEdNjZC6DsouvE9DP/uploaded-1794939987140-7b7th5qm.png?_wi=2",
     imageSrcAlt: "https://storage.googleapis.com/webild/users/user_3MF7lvQTiQCEdNjZC6DsouvE9DP/uploaded-1794939987144-961ozvam.jpg"
   },
   {
