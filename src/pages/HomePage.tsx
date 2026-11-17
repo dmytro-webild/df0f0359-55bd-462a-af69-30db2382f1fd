@@ -91,7 +91,7 @@ export default function HomePage() {
             },
             {
               title: "What is included with the $40 VIP ticket?",
-              description: "The $40 VIP ticket includes fast-track gate entry, access to the reserved trackside VIP lounge, full paddock/pit access, and an official event lanyard & decal pack."
+              description: "The $40 VIP ticket accese to vendors, better parking, closer to everything"
             },
             {
               title: "What extra perks come with the $80 Vendor pass?",
