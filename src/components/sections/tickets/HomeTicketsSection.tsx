@@ -64,7 +64,7 @@ const PASS_OPTIONS: PassOption[] = [
     features: [
       "Exclusive vendor booth placement",
       "Full trackside access",
-      "Priority sponsor branding placement",
+      "vendor setup at 10am",
       ""
     ]
   }
