@@ -37,7 +37,7 @@ export default function HomePage() {
               features: [
                 "Show & Shine Arena entry",
                 "Spectator trackside viewing access",
-                "Voting ballot for Best Build awards",
+                "",
                 "Event decal & sticker pack"
               ],
               cta: {
