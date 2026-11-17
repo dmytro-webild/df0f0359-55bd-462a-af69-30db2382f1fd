@@ -156,7 +156,7 @@ export default function HomePage() {
             "$40 VIP Pass",
             "$80 VIP All-Access Pass"
           ]}
-          submitText="Reserve Ticket Now"
+          submitText="Purchase Ticket Now"
           labels={{
             name: "Full name",
             role: "Attendee type",
