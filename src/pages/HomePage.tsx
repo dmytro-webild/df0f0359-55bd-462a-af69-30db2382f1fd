@@ -79,7 +79,7 @@ export default function HomePage() {
             },
             {
               title: "How can I pay for tickets using Cash App or credit card?",
-              description: "You can pay for tickets using Cash App ($ExclusiveSliding), Credit/Debit card online, Venmo, Apple Pay, or Cash at the entrance gate. Send payment on Cash App with your full name in the note, or call/text 812-800-8244 for instant confirmation."
+              description: "You can pay for tickets using Cash App ($jaydenmilliee07), Credit/Debit card online, Venmo, Apple Pay, or Cash at the entrance gate. Send payment on Cash App with your full name in the note, or call/text 812-800-8244 for instant confirmation."
             },
             {
               title: "What does the $20 Show & Shine ticket include?",
