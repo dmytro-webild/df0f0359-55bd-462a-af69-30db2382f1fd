@@ -54,7 +54,7 @@ export default function HomePage() {
               features: [
                 "Priority VIP gate entrance",
                 "Reserved trackside VIP lounge",
-                "Official Exclusive Sliding t-shirt & lanyard",
+                "Access  to vendors",
                 "Full paddock & pit lane access"
               ],
               cta: {
@@ -69,7 +69,7 @@ export default function HomePage() {
               period: "per pass",
               description: "Ultimate VIP pass with passenger hot lap ride-along experience, garage bay access, and driver meet-and-greet.",
               features: [
-                "All benefits from $40 VIP Pass",
+                "E",
                 "Passenger hot lap / ride-along pass",
                 "Exclusive garage & staging access",
                 "Driver meet & greet + VIP photo pass"
