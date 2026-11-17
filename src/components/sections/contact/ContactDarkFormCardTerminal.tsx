@@ -24,7 +24,7 @@ type ContactDarkFormCardTerminalProps = {
   logosTitle?: string;
   logos?: Logo[];
   topics?: string[];
-  labels?: Partial<Record<FieldKey, string>>;
+  labels?: Partial<Record<FieldKey, string | false>>;
   placeholders?: Partial<Record<FieldKey, string>>;
   submitText?: string;
   successText?: string;
@@ -157,8 +157,14 @@ const ContactDarkFormCardTerminal = ({
           >
             <div aria-hidden="true" className="absolute bottom-[calc(100%-1px)] left-[16%] right-[16%] h-[0.875rem] bg-deep [clip-path:polygon(0.875rem_0,calc(100%-0.875rem)_0,100%_100%,0_100%)]" />
             <form onSubmit={onSend} className="flex flex-col gap-[clamp(1.25rem,2.6vw,2.25rem)]">
-              <div className="grid grid-cols-1 gap-[clamp(1.25rem,2.6vw,2.25rem)]sm:grid-cols-2 sm:gap-x-[clamp(1.5rem,2.8vw,2.5rem)]">
-                {(["name", "role", "phone", "email"] as const).map((key, index) => (
+              <div className="grid grid-cols-1 gap-[clamp(1.25rem,2.6vw,2.25rem)] sm:grid-cols-2 sm:gap-x-[clamp(1.5rem,2.8vw,2.5rem)]">
+                {(["name", "role", "phone", "email"] as const)
+                  .filter((key) => {
+                    if (!labels) return true;
+                    if (key === "role") return Boolean(labels.role);
+                    return labels[key] !== "" && labels[key] !== false;
+                  })
+                  .map((key, index) => (
                   <motion.div key={key} {...fieldMotion(reduce, index)} className="flex min-w-0 flex-col gap-2">
                     <label htmlFor={`${uid}-${key}`} className="text-[length:var(--text-body)] leading-[1.4] [overflow-wrap:anywhere]">
                       {key === "name" || key === "email" ? `${text[key]} *` : text[key]}

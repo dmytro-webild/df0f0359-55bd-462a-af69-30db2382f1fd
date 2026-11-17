@@ -159,7 +159,6 @@ export default function HomePage() {
           submitText="Purchase Ticket Now"
           labels={{
             name: "Full name",
-            role: "Attendee type",
             phone: "Phone number",
             email: "Email address",
             company: "Vehicle / Team name (optional)",
@@ -168,7 +167,6 @@ export default function HomePage() {
           successText="Thank you! Your ticket reservation has been received. Check your email for pass details."
           placeholders={{
             name: "",
-            role: "",
             phone: "",
             email: "",
             company: "",
