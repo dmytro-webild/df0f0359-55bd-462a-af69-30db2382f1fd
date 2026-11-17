@@ -1,5 +1,4 @@
 import HeroParticleTruck from "@/components/sections/hero/HeroParticleTruck";
-import AboutCentredStatementLogos from "@/components/sections/about/AboutCentredStatementLogos";
 import FaqLimeAccordion from "@/components/sections/faq/FaqLimeAccordion";
 import ContactDarkFormCardTerminal from "@/components/sections/contact/ContactDarkFormCardTerminal";
 
@@ -20,30 +19,6 @@ export default function HomePage() {
             href: "tel:8128008244"
           }}
           introDelay={0.1}
-        />
-      </div>
-
-      <div id="about" data-webild-section="AboutCentredStatementLogos" data-webild-section-id="AboutCentredStatementLogos-1" data-section="about">
-        <AboutCentredStatementLogos
-          label="About The Meet"
-          title="Uniting custom truck builds, tire smoke, and high-angle control on the tarmac."
-          items={[
-            {
-              name: "Apex Performance"
-            },
-            {
-              name: "Torque Supply"
-            },
-            {
-              name: "Burnout Tech"
-            },
-            {
-              name: "Drift Spec"
-            },
-            {
-              name: "Overboost Co"
-            }
-          ]}
         />
       </div>
 
