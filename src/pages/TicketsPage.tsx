@@ -110,7 +110,7 @@ export default function TicketsPage() {
   const totalPrice = activePass.price * quantity;
 
   const handleCopyCashApp = () => {
-    navigator.clipboard.writeText("$ExclusiveSliding");
+    navigator.clipboard.writeText("$jaydenmilliee07");
     setCopiedCashApp(true);
     setTimeout(() => setCopiedCashApp(false), 2500);
   };
@@ -199,7 +199,7 @@ export default function TicketsPage() {
               className="inline-flex items-center gap-2 rounded-lg bg-emerald-950/60 border border-emerald-600/40 px-4 py-2 text-emerald-300 hover:bg-emerald-900/50 transition-colors"
             >
               <Zap className="size-4 text-emerald-400" />
-              Cash App: $ExclusiveSliding {copiedCashApp ? "(Copied!)" : "(Click to Copy)"}
+              Cash App: $jaydenmilliee07 {copiedCashApp ? "(Copied!)" : "(Click to Copy)"}
             </button>
           </div>
         </div>
