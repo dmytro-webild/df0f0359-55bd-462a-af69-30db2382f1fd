@@ -95,7 +95,7 @@ export default function HomePage() {
             },
             {
               title: "What extra perks come with the $80 Vendor pass?",
-              description: "The $80 Vendor pass includes exclusive vendor booth placement, full trackside paddock access, passenger hot-lap ride-along experience, and garage staging access."
+              description: "The $80 Vendor pass includes exclusive vendor booth placement"
             },
             {
               title: "When do gates open for spectators and vehicles?",
