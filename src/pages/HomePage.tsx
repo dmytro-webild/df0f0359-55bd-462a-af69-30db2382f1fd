@@ -94,7 +94,7 @@ export default function HomePage() {
               description: "The $80 Vendor pass includes exclusive vendor booth placement"
             },
             {
-              title: "When do gates open for spectators and vehicles?",
+              title: "",
               description: "Gates open Saturday from 8:00 AM to 10:00 PM. VIP pass holders and Show & Shine entries receive priority gate access."
             }
           ]}
