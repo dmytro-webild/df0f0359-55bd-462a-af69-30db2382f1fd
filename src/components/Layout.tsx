@@ -30,10 +30,6 @@ export default function Layout() {
             text: "Get Tickets",
             href: "#tickets"
           }}
-          secondaryButton={{
-            text: "",
-            href: "tel:8128008244"
-          }}
         />
       </header>
       <main className="flex-grow" data-button="solid" data-card="filled" data-pattern="none">
