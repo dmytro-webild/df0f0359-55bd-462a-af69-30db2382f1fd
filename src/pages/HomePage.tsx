@@ -38,7 +38,7 @@ export default function HomePage() {
                 "Show & Shine Arena entry",
                 "Spectator trackside viewing access",
                 "",
-                "Event decal & sticker pack"
+                "Access  to vendors"
               ],
               cta: {
                 text: "Select $20 Pass",
