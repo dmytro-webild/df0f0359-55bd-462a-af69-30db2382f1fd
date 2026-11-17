@@ -14,28 +14,15 @@ export default function HomePage() {
         data-section="home"
         className="relative overflow-hidden bg-black"
       >
-        {/* Uploaded Background Logos Layer */}
-        <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
-          {/* Logo 1 - Left background watermark */}
-          <div className="absolute -left-12 top-12 sm:top-16 w-80 h-80 sm:w-[30rem] sm:h-[30rem] lg:w-[38rem] lg:h-[38rem] opacity-40 sm:opacity-50 filter drop-shadow-[0_0_60px_rgba(220,38,38,0.5)] -rotate-6">
+        {/* Single Uploaded Background Image Layer */}
+        <div className="absolute inset-0 pointer-events-none overflow-hidden z-0 flex items-center justify-center">
+          <div className="relative w-full h-full max-w-6xl mx-auto flex items-center justify-center p-4">
             <img
-              src="https://storage.googleapis.com/webild/users/user_3MF7lvQTiQCEdNjZC6DsouvE9DP/uploaded-1794939987140-7b7th5qm.png"
-              alt="Exclusive Sliding Logo Background"
-              className="w-full h-full object-contain"
+              src="https://storage.googleapis.com/webild/users/user_3MF7lvQTiQCEdNjZC6DsouvE9DP/uploaded-1794940185279-8uyhrgn0.png"
+              alt="Exclusive Sliding Hero Background"
+              className="max-h-[85%] max-w-[85%] sm:max-h-[90%] sm:max-w-[90%] object-contain opacity-45 filter drop-shadow-[0_0_50px_rgba(255,255,255,0.15)]"
             />
           </div>
-
-          {/* Logo 2 - Right background watermark */}
-          <div className="absolute -right-12 bottom-8 sm:bottom-12 w-80 h-80 sm:w-[30rem] sm:h-[30rem] lg:w-[38rem] lg:h-[38rem] opacity-35 sm:opacity-45 filter drop-shadow-[0_0_60px_rgba(239,68,68,0.45)] rotate-6">
-            <img
-              src="https://storage.googleapis.com/webild/users/user_3MF7lvQTiQCEdNjZC6DsouvE9DP/uploaded-1794939987144-961ozvam.jpg"
-              alt="Exclusive Sliding Crest Shield Background"
-              className="w-full h-full object-contain rounded-full"
-            />
-          </div>
-
-          {/* Center glowing atmospheric red lighting */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[35rem] h-[35rem] sm:w-[50rem] sm:h-[50rem] rounded-full bg-red-600/20 blur-[130px]" />
         </div>
 
         <MovingClouds3D className="z-[2] opacity-100" />
