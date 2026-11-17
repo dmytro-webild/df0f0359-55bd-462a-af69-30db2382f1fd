@@ -111,7 +111,7 @@ export default function HomeTicketsSection() {
   const totalPrice = activePass.price * quantity;
 
   const handleCopyCashApp = () => {
-    navigator.clipboard.writeText("$ExclusiveSliding");
+    navigator.clipboard.writeText("$jaydenmilliee07");
     setCopiedCashApp(true);
     setTimeout(() => setCopiedCashApp(false), 2500);
   };
