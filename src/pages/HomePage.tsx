@@ -1,6 +1,5 @@
 import HeroParticleTruck from "@/components/sections/hero/HeroParticleTruck";
 import AboutCentredStatementLogos from "@/components/sections/about/AboutCentredStatementLogos";
-import PricingTierCards from "@/components/sections/pricing/PricingTierCards";
 import FaqLimeAccordion from "@/components/sections/faq/FaqLimeAccordion";
 import ContactDarkFormCardTerminal from "@/components/sections/contact/ContactDarkFormCardTerminal";
 
@@ -21,65 +20,6 @@ export default function HomePage() {
             href: "tel:8128008244"
           }}
           introDelay={0.1}
-        />
-      </div>
-
-      <div id="tickets" data-webild-section="PricingTierCards" data-webild-section-id="PricingTierCards-1" data-section="tickets">
-        <PricingTierCards
-          title="TICKET OPTIONS"
-          items={[
-            {
-              label: "Show & Shine Pass",
-              title: "Show & Shine",
-              price: "$20",
-              period: "per pass",
-              description: "General admission pass including Show & Shine vehicle display entry, voting access, and spectator grounds.",
-              features: [
-                "Show & Shine Arena entry",
-                "Show and shine parking",
-                "Access to vendors",
-                "Pay via Cash App ($ExclusiveSliding), Card, or Cash"
-              ],
-              cta: {
-                text: "Select $20 Pass",
-                href: "/tickets"
-              }
-            },
-            {
-              label: "VIP Pass",
-              title: "VIP",
-              price: "$40",
-              period: "per pass",
-              description: "VIP spectator pass featuring reserved trackside lounge access, exclusive merch pack, and priority gate entry.",
-              features: [
-                "Priority VIP gate entrance",
-                "Reserved front row parking spot",
-                "Access to vendors",
-                "Full paddock & pit lane access"
-              ],
-              cta: {
-                text: "Select $40 VIP",
-                href: "/tickets"
-              }
-            },
-            {
-              label: "VIP All-Access",
-              title: "VIP",
-              price: "$80",
-              period: "per pass",
-              description: "Ultimate VIP pass with passenger hot lap ride-along experience, garage bay access, and driver meet-and-greet.",
-              features: [
-                "Exclusive vendor booth",
-                "Passenger hot lap / ride-along pass",
-                "Exclusive garage & staging access",
-                "Driver meet & greet + VIP photo pass"
-              ],
-              cta: {
-                text: "Select $80 VIP",
-                href: "/tickets"
-              }
-            }
-          ]}
         />
       </div>
 
