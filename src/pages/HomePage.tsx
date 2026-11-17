@@ -9,7 +9,7 @@ export default function HomePage() {
     <>
       <div id="home" data-webild-section="HeroParticleTruck" data-webild-section-id="HeroParticleTruck-1" data-section="home">
         <HeroParticleTruck
-          label="contact number 812-800-8244"
+          label="CREW PHONE: 812-800-8244 | CASH APP & CARDS ACCEPTED"
           title="EXCLUSIVE SLIDING"
           description="if your looking for custom builds, show & shine showcases,burn outs, vip, vendors, then this is the show for you!"
           primaryButton={{
@@ -17,8 +17,8 @@ export default function HomePage() {
             href: "#tickets"
           }}
           secondaryButton={{
-            text: "Ticket Tiers",
-            href: "#tickets"
+            text: "Call Crew: 812-800-8244",
+            href: "tel:8128008244"
           }}
           introDelay={0.1}
         />
@@ -37,8 +37,8 @@ export default function HomePage() {
               features: [
                 "Show & Shine Arena entry",
                 "Show and shine parking",
-                "",
-                "Access  to vendors"
+                "Access to vendors",
+                "Pay via Cash App ($ExclusiveSliding), Card, or Cash"
               ],
               cta: {
                 text: "Select $20 Pass",
@@ -54,7 +54,7 @@ export default function HomePage() {
               features: [
                 "Priority VIP gate entrance",
                 "Reserved front row parking spot",
-                "Access  to vendors",
+                "Access to vendors",
                 "Full paddock & pit lane access"
               ],
               cta: {
@@ -111,14 +111,18 @@ export default function HomePage() {
         <FaqLimeAccordion
           label="Got Questions?"
           title="Ticket & Event Information"
-          description="Everything you need to know about spectator tickets, VIP perks, gate times, and parking."
-          contactLabel="Need event info?"
-          contactTitle="Talk directly with our event coordination crew."
+          description="Everything you need to know about spectator tickets, VIP perks, gate times, payment methods, and crew contact."
+          contactLabel="Need crew or payment info?"
+          contactTitle="Talk directly with our event coordination crew at 812-800-8244."
           contactButton={{
-            text: "Contact event crew",
-            href: "#contact"
+            text: "Call / Text Crew: 812-800-8244",
+            href: "tel:8128008244"
           }}
           items={[
+            {
+              title: "How can I pay for tickets using Cash App or other payment methods?",
+              description: "You can pay for tickets using Cash App ($ExclusiveSliding), Venmo, Apple Pay, Credit/Debit card, or Cash at the entrance gate. Send payment on Cash App with your full name in the note, or call/text 812-800-8244 for instant confirmation."
+            },
             {
               title: "What does the $20 Show & Shine ticket include?",
               description: "The $20 Show & Shine ticket grants you full access to the truck showcase arena, spectator viewing areas, event voting ballot, and general parking."
@@ -141,36 +145,37 @@ export default function HomePage() {
 
       <div id="contact" data-webild-section="ContactDarkFormCardTerminal" data-webild-section-id="ContactDarkFormCardTerminal-1" data-section="contact">
         <ContactDarkFormCardTerminal
-          label="Reserve Passes"
-          title="Secure your Exclusive Sliding ticket"
-          description="Select your ticket option to confirm your spot for the upcoming truck meet."
-          itemsTitle="Ticket reservation steps"
+          label="CONTACT CREW & PASS RESERVATION"
+          title="Call or Text 812-800-8244"
+          description="Contact our crew directly at 812-800-8244 or reserve your ticket below. We accept Cash App ($ExclusiveSliding), Venmo, Apple Pay, Cards, and Cash at gate."
+          itemsTitle="Crew Contact & Ticket Payment Instructions"
           items={[
-            "Select your ticket option ($20, $40, or $80 VIP)",
-            "Receive digital pass confirmation via email",
-            "Show confirmation at main gate for wristband entry"
+            "Direct Crew Line: 812-800-8244 (Call or Text anytime)",
+            "Cash App ($ExclusiveSliding) - add full name in payment note",
+            "Venmo, Apple Pay & Credit / Debit Cards accepted",
+            "Cash accepted at main entrance gate on event day"
           ]}
-          note="Limited VIP passes available"
+          note="Crew Available 8:00 AM - 10:00 PM | Call/Text 812-800-8244"
           topics={[
-            "$20 Show & Shine Pass",
-            "$40 VIP Pass",
-            "$80 VIP All-Access Pass"
+            "$20 Show & Shine Pass (Cash App / Card / Cash)",
+            "$40 VIP Pass (Cash App / Card / Cash)",
+            "$80 VIP All-Access Pass (Cash App / Card / Cash)"
           ]}
-          submitText="Purchase Ticket Now"
+          submitText="Reserve Ticket & Request Payment Info"
           labels={{
             name: "Full name",
             phone: "Phone number",
             email: "Email address",
-            company: "Vehicle / Team name (optional)",
+            company: "Preferred Payment Method (Cash App, Card, Cash)",
             topic: "Select ticket option"
           }}
-          successText="Thank you! Your ticket reservation has been received. Check your email for pass details."
+          successText="Thank you! Reservation received. Text 812-800-8244 or send Cash App to $ExclusiveSliding with your name to confirm instantly."
           placeholders={{
-            name: "",
-            phone: "",
-            email: "",
-            company: "",
-            topic: ""
+            name: "Your full name",
+            phone: "Your phone number",
+            email: "you@email.com",
+            company: "e.g. Cash App ($Tag), Card, Cash at Gate",
+            topic: "Select pass option"
           }}
         />
       </div>
