@@ -9,9 +9,9 @@ export default function HomePage() {
     <>
       <div id="home" data-webild-section="HeroParticleTruck" data-webild-section-id="HeroParticleTruck-1" data-section="home">
         <HeroParticleTruck
-          label="OFFICIAL TRUCK MEET 2026"
+          label="contact number"
           title="EXCLUSIVE SLIDING"
-          description="High horsepower custom builds, show & shine showcases, and tire-smoking drift action. Experience the ultimate truck event."
+          description="if your looking for custom builds, show & shine showcases,burn outs, vip, vendors, then this is the show for you!"
           primaryButton={{
             text: "Get Tickets",
             href: "#tickets"
