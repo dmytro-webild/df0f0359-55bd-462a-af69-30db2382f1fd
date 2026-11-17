@@ -34,20 +34,20 @@ const NavbarGlassPlate = ({ brand, logoSrc, navItems, primaryButton, secondaryBu
         transition={{ duration: 1, ease: EXPO_OUT, delay: 0.2 }}
         className="fixed inset-x-0 top-[1.5625rem] z-50 flex justify-center px-[var(--gutter)] lg:top-[2.875rem]"
       >
-        <div className="flex w-full max-w-[58.75rem] items-center justify-between gap-[clamp(0.75rem,1.6vw,1.5rem)] rounded-[var(--radius)] bg-deep/30 p-[0.5rem] pl-[1rem] text-deep-foreground backdrop-blur-[30px] lg:p-[1.125rem]">
+        <div className="flex w-full max-w-[58.75rem] items-center justify-between gap-[clamp(0.75rem,1.6vw,1.5rem)] rounded-[var(--radius)] bg-black/90 p-[0.5rem] pl-[1rem] text-white backdrop-blur-[30px] border border-black lg:p-[1.125rem]">
           <a href="#" className="flex min-w-0 shrink-0 items-center gap-[0.5rem]">
             {logoSrc ? (
               <img src={logoSrc} alt={brand} loading="eager" decoding="async" className="h-[1.6rem] w-auto max-w-[9rem] object-contain" />
             ) : (
-              <p className="truncate text-[length:var(--text-body-lg)] font-medium leading-none tracking-[-0.03em] pb-[0.2em] -mb-[0.2em]">{brand}</p>
+              <p className="truncate text-[length:var(--text-body-lg)] font-bold uppercase tracking-wider pb-[0.2em] -mb-[0.2em] text-white">{brand}</p>
             )}
           </a>
 
           {navItems.length > 0 && (
-            <ul className="hidden min-w-0 items-center gap-[clamp(1rem,1.6vw,1.5rem)] min-[94.5rem]:flex">
+            <ul className="hidden min-w-0 items-center gap-[clamp(1rem,1.6vw,1.5rem)] md:flex">
               {navItems.map((item, i) => (
                 <li key={`${i}-${item.href}`}>
-                  <a href={item.href} className="whitespace-nowrap text-[length:var(--text-small)] font-[450] leading-none transition-colors duration-300 hover:text-accent">
+                  <a href={item.href} className="whitespace-nowrap text-[length:var(--text-small)] font-semibold transition-colors duration-300 hover:text-accent">
                     {item.name}
                   </a>
                 </li>
@@ -62,7 +62,7 @@ const NavbarGlassPlate = ({ brand, logoSrc, navItems, primaryButton, secondaryBu
               </a>
             )}
             {secondaryButton && (
-              <a href={secondaryButton.href} className="btn-secondary hidden min-h-[2.625rem] bg-background px-[1.125rem] min-[94.5rem]:inline-flex">
+              <a href={secondaryButton.href} className="btn-secondary hidden min-h-[2.625rem] px-[1.125rem] md:inline-flex">
                 <p className="btn-label">{secondaryButton.text}</p>
               </a>
             )}
@@ -71,7 +71,7 @@ const NavbarGlassPlate = ({ brand, logoSrc, navItems, primaryButton, secondaryBu
               aria-expanded={open}
               aria-label={open ? closeText : menuText}
               onClick={() => setOpen((value) => !value)}
-              className={`flex size-[3rem] flex-col items-center justify-center gap-[0.3rem] rounded-[var(--radius)] bg-deep/30 min-[94.5rem]:hidden ${primaryButton ? "sm:size-[2.625rem]" : ""}`}
+              className={`flex size-[3rem] flex-col items-center justify-center gap-[0.3rem] rounded-[var(--radius)] bg-black/40 md:hidden ${primaryButton ? "sm:size-[2.625rem]" : ""}`}
             >
               <div aria-hidden="true" className={`h-px w-[1.1rem] bg-current transition-transform duration-300 ${open ? "translate-y-[calc(0.15rem+0.5px)] rotate-45" : ""}`} />
               <div aria-hidden="true" className={`h-px w-[1.1rem] bg-current transition-transform duration-300 ${open ? "-translate-y-[calc(0.15rem+0.5px)] -rotate-45" : ""}`} />
@@ -89,7 +89,7 @@ const NavbarGlassPlate = ({ brand, logoSrc, navItems, primaryButton, secondaryBu
             exit={{ opacity: 0 }}
             transition={{ duration: 0.4 }}
             onClick={() => setOpen(false)}
-            className="fixed inset-0 z-[60] bg-deep/30 min-[94.5rem]:hidden"
+            className="fixed inset-0 z-[60] bg-black/60 md:hidden"
           />
         )}
         {open && (
@@ -103,10 +103,10 @@ const NavbarGlassPlate = ({ brand, logoSrc, navItems, primaryButton, secondaryBu
             animate={reduce ? { opacity: 1 } : { x: "0%" }}
             exit={reduce ? { opacity: 0 } : { x: "100%" }}
             transition={{ duration: 0.8, ease: EXPO_OUT }}
-            className="fixed inset-y-0 right-0 z-[70] flex w-[min(100%,26rem)] flex-col bg-deep/30 p-[var(--gutter)] pt-[1.5625rem] text-deep-foreground backdrop-blur-[30px] min-[94.5rem]:hidden"
+            className="fixed inset-y-0 right-0 z-[70] flex w-[min(100%,26rem)] flex-col bg-black/95 p-[var(--gutter)] pt-[1.5625rem] text-white backdrop-blur-[30px] md:hidden"
           >
             <div className="flex justify-end">
-              <button type="button" onClick={() => setOpen(false)} aria-label={closeText} className={`flex size-[3rem] items-center justify-center rounded-[var(--radius)] bg-deep/30 ${primaryButton ? "sm:size-[2.625rem]" : ""}`}>
+              <button type="button" onClick={() => setOpen(false)} aria-label={closeText} className={`flex size-[3rem] items-center justify-center rounded-[var(--radius)] bg-white/10 ${primaryButton ? "sm:size-[2.625rem]" : ""}`}>
                 <div aria-hidden="true" className="relative size-[1.1rem]">
                   <div className="absolute left-0 top-1/2 h-px w-full rotate-45 bg-current" />
                   <div className="absolute left-0 top-1/2 h-px w-full -rotate-45 bg-current" />

@@ -78,11 +78,11 @@ const HeroParticleTruck = ({
   let charIndex = 0;
 
   return (
-    <section ref={sectionRef} data-particle="hero" aria-label={ariaLabel ?? title} className={cn("relative z-[1] h-svh min-h-[40rem] text-deep-foreground", className)}>
+    <section ref={sectionRef} data-particle="hero" aria-label={ariaLabel ?? title} className={cn("relative z-[1] min-h-[40rem] py-[clamp(4rem,10vh,8rem)] text-foreground", className)}>
       <div
         className={cn(
-          "mx-auto flex h-full w-[var(--container)] flex-col pt-[clamp(6rem,14svh,8rem)] pb-[clamp(1.5rem,4svh,3rem)]",
-          layout === "split" ? "lg:grid lg:grid-cols-2 lg:items-center lg:gap-[clamp(2rem,4vw,4rem)] lg:pt-[clamp(5rem,10svh,7rem)] lg:pb-[clamp(3rem,8svh,5rem)]" : "lg:pt-[clamp(7.5rem,15svh,9rem)] lg:pb-[clamp(2.5rem,6svh,4rem)]",
+          "mx-auto flex h-full w-[var(--container)] flex-col pt-[clamp(4rem,10svh,6rem)] pb-[clamp(1.5rem,4svh,3rem)]",
+          layout === "split" ? "lg:grid lg:grid-cols-2 lg:items-center lg:gap-[clamp(2rem,4vw,4rem)]" : "lg:pt-[clamp(5rem,10svh,7rem)] lg:pb-[clamp(2.5rem,6svh,4rem)]",
         )}
       >
         <div data-particle-text className="flex flex-col items-start text-left">
@@ -94,7 +94,7 @@ const HeroParticleTruck = ({
               className="mb-[clamp(0.75rem,1.4vw,1.25rem)] flex items-center gap-[0.625rem]"
             >
               <div aria-hidden="true" className="size-[0.5rem] shrink-0 bg-accent" />
-              <p className="font-mono text-[length:var(--text-label)] font-semibold uppercase leading-[1.3] tracking-[var(--label-tracking)] text-deep-foreground/80">{label}</p>
+              <p className="font-mono text-[length:var(--text-label)] font-semibold uppercase leading-[1.3] tracking-[var(--label-tracking)] text-accent">{label}</p>
             </motion.div>
           )}
           <h1 aria-label={title} className="max-w-[min(100%,11em)] text-[length:min(var(--text-display),12.5vw)] leading-[0.98] tracking-[-0.035em] text-balance [font-family:var(--font-heading)] [font-weight:var(--heading-weight)]">
@@ -119,7 +119,7 @@ const HeroParticleTruck = ({
               initial={reduce ? false : { opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: after }}
-              className="mt-[clamp(1rem,2vw,1.75rem)] max-w-[32rem] text-pretty text-[length:var(--text-body)] leading-[1.4] tracking-[0.02em] text-[color-mix(in_srgb,var(--deep-foreground)_65%,var(--deep))]"
+              className="mt-[clamp(1rem,2vw,1.75rem)] max-w-[32rem] text-pretty text-[length:var(--text-body-lg)] leading-[1.4] tracking-[0.02em] text-muted-foreground"
             >
               {description}
             </motion.p>
@@ -137,7 +137,7 @@ const HeroParticleTruck = ({
                 </a>
               )}
               {secondaryButton && (
-                <a href={secondaryButton.href} className="btn-secondary min-h-[3.25rem] bg-background px-[clamp(1.5rem,3vw,2.5rem)] tracking-[0.12375rem]">
+                <a href={secondaryButton.href} className="btn-secondary min-h-[3.25rem] px-[clamp(1.5rem,3vw,2.5rem)] tracking-[0.12375rem]">
                   <p className="btn-label">{secondaryButton.text}</p>
                 </a>
               )}
