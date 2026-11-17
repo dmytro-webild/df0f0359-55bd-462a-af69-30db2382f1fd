@@ -1,6 +1,5 @@
 import HeroParticleTruck from "@/components/sections/hero/HeroParticleTruck";
 import FaqLimeAccordion from "@/components/sections/faq/FaqLimeAccordion";
-import ContactDarkFormCardTerminal from "@/components/sections/contact/ContactDarkFormCardTerminal";
 
 export default function HomePage() {
   return (
@@ -55,43 +54,6 @@ export default function HomePage() {
               description: "Gates open Saturday from 8:00 AM to 10:00 PM. VIP pass holders and Show & Shine entries receive priority gate access."
             }
           ]}
-        />
-      </div>
-
-      <div id="contact" data-webild-section="ContactDarkFormCardTerminal" data-webild-section-id="ContactDarkFormCardTerminal-1" data-section="contact">
-        <ContactDarkFormCardTerminal
-          label="CONTACT CREW & PASS RESERVATION"
-          title="Call or Text 812-800-8244"
-          description="Contact our crew directly at 812-800-8244 or reserve your ticket below. We accept Cash App ($ExclusiveSliding), Venmo, Apple Pay, Cards, and Cash at gate."
-          itemsTitle="Crew Contact & Ticket Payment Instructions"
-          items={[
-            "Direct Crew Line: 812-800-8244 (Call or Text anytime)",
-            "Cash App ($ExclusiveSliding) - add full name in payment note",
-            "Venmo, Apple Pay & Credit / Debit Cards accepted",
-            "Cash accepted at main entrance gate on event day"
-          ]}
-          note="Crew Available 8:00 AM - 10:00 PM | Call/Text 812-800-8244"
-          topics={[
-            "$20 Show & Shine Pass (Cash App / Card / Cash)",
-            "$40 VIP Pass (Cash App / Card / Cash)",
-            "$80 VIP All-Access Pass (Cash App / Card / Cash)"
-          ]}
-          submitText="Reserve Ticket & Request Payment Info"
-          labels={{
-            name: "Full name",
-            phone: "Phone number",
-            email: "Email address",
-            company: "Preferred Payment Method (Cash App, Card, Cash)",
-            topic: "Select ticket option"
-          }}
-          successText="Thank you! Reservation received. Text 812-800-8244 or send Cash App to $ExclusiveSliding with your name to confirm instantly."
-          placeholders={{
-            name: "Your full name",
-            phone: "Your phone number",
-            email: "you@email.com",
-            company: "e.g. Cash App ($Tag), Card, Cash at Gate",
-            topic: "Select pass option"
-          }}
         />
       </div>
     </>

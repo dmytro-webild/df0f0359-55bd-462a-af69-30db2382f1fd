@@ -24,10 +24,6 @@ export default function Layout() {
             {
               name: "FAQ",
               href: "/#faq"
-            },
-            {
-              name: "Contact Crew",
-              href: "/#contact"
             }
           ]}
           primaryButton={{
@@ -79,10 +75,6 @@ export default function Layout() {
                 {
                   text: "Event FAQ",
                   href: "/#faq"
-                },
-                {
-                  text: "Contact & Location",
-                  href: "/#contact"
                 }
               ]
             }
