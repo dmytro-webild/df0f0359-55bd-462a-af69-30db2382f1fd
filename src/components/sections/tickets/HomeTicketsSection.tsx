@@ -37,7 +37,7 @@ const PASS_OPTIONS: PassOption[] = [
     features: [
       "Show & Shine Arena access",
       "Spectator viewing & vehicle voting",
-      "General grounds & vendor access",
+      "General grounds & vendor access opens at 12pm",
       "Reserve online — pay cash or card at gate"
     ]
   },
@@ -51,7 +51,7 @@ const PASS_OPTIONS: PassOption[] = [
     features: [
       "Priority VIP gate entrance",
       "Reserved trackside vehicle parking",
-      "VIP lounge & pit area access",
+      "VIP lounge & pit area access opens at 11am",
       "Exclusive lanyard & decal pack"
     ]
   },
