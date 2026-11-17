@@ -485,11 +485,11 @@ export default function TicketsPage() {
                           onClick={handleCopyCashApp}
                           className="inline-flex items-center gap-1 font-mono text-white bg-emerald-900/80 hover:bg-emerald-800 px-2.5 py-1 rounded border border-emerald-600/50"
                         >
-                          $ExclusiveSliding {copiedCashApp ? <Check className="size-3 text-emerald-300" /> : <Copy className="size-3" />}
+                          $jaydenmilliee07 {copiedCashApp ? <Check className="size-3 text-emerald-300" /> : <Copy className="size-3" />}
                         </button>
                       </div>
                       <p className="text-zinc-300 leading-relaxed">
-                        Send <strong className="text-emerald-300">${totalPrice}</strong> to <span className="font-mono text-white">$ExclusiveSliding</span>. Enter your Cash App handle below so our crew can match your pass:
+                        Send <strong className="text-emerald-300">${totalPrice}</strong> to <span className="font-mono text-white">$jaydenmilliee07</span>. Enter your Cash App handle below so our crew can match your pass:
                       </p>
                       <div>
                         <label className="text-[10px] font-mono text-zinc-400 uppercase block mb-1">Your $Cashtag / Name on Cash App</label>
@@ -637,7 +637,7 @@ export default function TicketsPage() {
               <div className="rounded-xl border border-zinc-800 bg-zinc-950 p-5">
                 <h3 className="font-bold text-white text-base">How do I verify my Cash App payment?</h3>
                 <p className="text-zinc-400 text-sm mt-2 leading-relaxed">
-                  Send your total amount to <span className="font-mono text-emerald-400">$ExclusiveSliding</span> on Cash App. Include your full name in the Cash App memo. Once sent, our system or gate crew confirms your entry instantly against your phone number or digital pass code.
+                  Send your total amount to <span className="font-mono text-emerald-400">$jaydenmilliee07</span> on Cash App. Include your full name in the Cash App memo. Once sent, our system or gate crew confirms your entry instantly against your phone number or digital pass code.
                 </p>
               </div>
 
