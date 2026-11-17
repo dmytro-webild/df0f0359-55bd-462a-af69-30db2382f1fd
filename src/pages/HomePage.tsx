@@ -53,7 +53,7 @@ export default function HomePage() {
               description: "VIP spectator pass featuring reserved trackside lounge access, exclusive merch pack, and priority gate entry.",
               features: [
                 "Priority VIP gate entrance",
-                "Reserved trackside VIP lounge",
+                "Reserved front row parking spot",
                 "Access  to vendors",
                 "Full paddock & pit lane access"
               ],
