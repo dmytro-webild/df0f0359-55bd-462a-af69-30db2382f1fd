@@ -192,7 +192,7 @@ export default function HomeTicketsSection() {
             Get Online Passes & Gate Reservations
           </h2>
           <p className="mt-3 text-sm sm:text-base text-zinc-400">
-            Reserve your ticket online now and pay cash or card at the entrance gate, or complete your payment online via Cash App ($jaydenmilliee07) or credit card.
+            Reserve your ticket online now and pay cash or card at the entrance gate, or complete your payment online via Cash App ($ExclusiveSliding) or credit card.
           </p>
         </div>
 
