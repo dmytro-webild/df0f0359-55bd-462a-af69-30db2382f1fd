@@ -24,9 +24,26 @@ interface Product {
   features: string[];
   gradient: string;
   iconType: "hoodie" | "tee" | "cap" | "jacket" | "decal" | "lanyard";
+  imageSrc?: string;
+  imageSrcAlt?: string;
 }
 
 const FEATURED_PRODUCTS: Product[] = [
+  {
+    id: "sticker-01",
+    name: "Exclusive Sliding Official Logo Sticker",
+    category: "accessories",
+    price: 20,
+    badge: "NEW RELEASE",
+    description: "Official 7-inch heavy-duty weatherproof die-cut vinyl sticker. UV resistant for truck windows, helmets, and toolboxes.",
+    colors: ["Primary Emblem Logo", "Sliding Crest Shield"],
+    sizes: ["7-inch Die-Cut", "Pack of 2"],
+    features: ["Heavy-duty Weatherproof Vinyl", "UV & Power-wash Resistant", "Uploaded Logo Artwork"],
+    gradient: "from-zinc-950 via-red-950 to-black",
+    iconType: "decal",
+    imageSrc: "https://storage.googleapis.com/webild/users/user_3MF7lvQTiQCEdNjZC6DsouvE9DP/uploaded-1794939987140-7b7th5qm.png",
+    imageSrcAlt: "https://storage.googleapis.com/webild/users/user_3MF7lvQTiQCEdNjZC6DsouvE9DP/uploaded-1794939987144-961ozvam.jpg"
+  },
   {
     id: "hoodie-01",
     name: "Exclusive Sliding Heavyweight Hoodie",
@@ -72,6 +89,7 @@ export default function HomeMerchSection() {
   const [productSelections, setProductSelections] = useState<
     Record<string, { color: string; size: string }>
   >({
+    "sticker-01": { color: "Primary Emblem Logo", size: "7-inch Die-Cut" },
     "hoodie-01": { color: "Pitch Black", size: "L" },
     "tee-01": { color: "Matte Black", size: "L" },
     "cap-01": { color: "Stealth Black", size: "Adjustable" }
@@ -260,12 +278,17 @@ export default function HomeMerchSection() {
         )}
 
         {/* Featured Products Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {FEATURED_PRODUCTS.map((product) => {
             const sel = productSelections[product.id] || {
               color: product.colors[0],
               size: product.sizes[0]
             };
+
+            const currentImg =
+              sel.color === "Sliding Crest Shield" && product.imageSrcAlt
+                ? product.imageSrcAlt
+                : product.imageSrc;
 
             return (
               <div
@@ -273,9 +296,19 @@ export default function HomeMerchSection() {
                 className="rounded-2xl border border-zinc-800 bg-black overflow-hidden flex flex-col justify-between group hover:border-zinc-700 transition-all duration-300 shadow-xl"
               >
                 <div>
-                  <div className={`h-44 bg-gradient-to-br ${product.gradient} p-5 relative flex flex-col justify-between`}>
-                    <div className="flex justify-between items-start">
-                      <span className="text-xs font-mono font-bold uppercase tracking-widest text-zinc-300 bg-black/60 backdrop-blur-md px-3 py-1 rounded-full border border-zinc-800">
+                  <div className={`h-48 bg-gradient-to-br ${product.gradient} p-4 relative flex flex-col justify-between overflow-hidden`}>
+                    {currentImg && (
+                      <div className="absolute inset-0 flex items-center justify-center p-3 pointer-events-none opacity-90 group-hover:scale-110 transition-transform duration-300">
+                        <img
+                          src={currentImg}
+                          alt={product.name}
+                          className="max-h-28 max-w-[85%] object-contain drop-shadow-[0_4px_16px_rgba(0,0,0,0.9)]"
+                        />
+                      </div>
+                    )}
+
+                    <div className="flex justify-between items-start z-10">
+                      <span className="text-xs font-mono font-bold uppercase tracking-widest text-zinc-300 bg-black/70 backdrop-blur-md px-3 py-1 rounded-full border border-zinc-800">
                         ${product.price}
                       </span>
                       {product.badge && (
@@ -285,19 +318,19 @@ export default function HomeMerchSection() {
                       )}
                     </div>
 
-                    <div className="flex items-center gap-3">
-                      <div className="size-10 rounded-xl bg-black/50 border border-white/10 flex items-center justify-center backdrop-blur-md text-red-500">
+                    <div className="flex items-center gap-2.5 z-10 bg-black/40 backdrop-blur-sm p-1.5 rounded-xl border border-white/5">
+                      <div className="size-8 rounded-lg bg-black/60 border border-white/10 flex items-center justify-center text-red-500 shrink-0">
                         {product.iconType === "hoodie" || product.iconType === "tee" ? (
-                          <Shirt className="size-5" />
+                          <Shirt className="size-4" />
                         ) : (
-                          <Sparkles className="size-5" />
+                          <Sparkles className="size-4" />
                         )}
                       </div>
-                      <div>
-                        <span className="text-[10px] font-mono text-zinc-400 uppercase tracking-wider block">
+                      <div className="min-w-0">
+                        <span className="text-[9px] font-mono text-zinc-400 uppercase tracking-wider block truncate">
                           EXCLUSIVE SLIDING
                         </span>
-                        <span className="text-xs font-bold uppercase text-white font-mono">
+                        <span className="text-[11px] font-bold uppercase text-white font-mono truncate block">
                           {product.category}
                         </span>
                       </div>
