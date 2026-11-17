@@ -111,8 +111,52 @@ const ContactDarkFormCardTerminal = ({
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "0px 0px -15% 0px" }}
               transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-              className="flex min-w-0 flex-col gap-[clamp(1.75rem,4vw,3rem)] lg:pt-[1.75rem]"
+              className="flex min-w-0 flex-col gap-[clamp(1.5rem,3vw,2.25rem)] lg:pt-[0.5rem]"
             >
+              <div className="flex flex-col gap-3 rounded-[calc(var(--radius-card)*0.5)] border border-accent bg-accent/10 p-[clamp(1.25rem,2vw,1.75rem)] shadow-sm">
+                <div className="flex items-center justify-between gap-2">
+                  <p className="font-mono text-[length:var(--text-label)] font-semibold uppercase tracking-[var(--label-tracking)] text-accent">
+                    Contact Crew Direct Line
+                  </p>
+                  <div aria-hidden="true" className="size-2 rounded-full bg-emerald-500 animate-pulse" />
+                </div>
+                <a
+                  href="tel:8128008244"
+                  className="text-[clamp(1.5rem,2.5vw,2.25rem)] font-bold tracking-tight text-foreground hover:text-accent transition-colors"
+                >
+                  812-800-8244
+                </a>
+                <p className="text-[length:var(--text-small)] text-muted-foreground">
+                  Call or text our crew directly for ticket passes, Cash App confirmation, or gate info.
+                </p>
+                <a href="tel:8128008244" className="btn-primary mt-1 min-h-[2.75rem] w-full text-center">
+                  <p className="btn-label">Call / Text Crew: 812-800-8244</p>
+                </a>
+              </div>
+
+              <div className="flex flex-col gap-2 rounded-[calc(var(--radius-card)*0.5)] border border-border bg-card p-4">
+                <p className="font-mono text-[length:var(--text-label)] font-semibold uppercase tracking-[var(--label-tracking)] text-accent font-semibold">
+                  Ticket Payment Options
+                </p>
+                <div className="flex flex-wrap gap-2 text-xs font-mono">
+                  <span className="rounded-md border border-border bg-background px-2.5 py-1 text-foreground font-semibold">
+                    🟢 Cash App: <strong className="text-accent">$ExclusiveSliding</strong>
+                  </span>
+                  <span className="rounded-md border border-border bg-background px-2.5 py-1 text-muted-foreground">
+                    💳 Venmo
+                  </span>
+                  <span className="rounded-md border border-border bg-background px-2.5 py-1 text-muted-foreground">
+                    🍎 Apple Pay
+                  </span>
+                  <span className="rounded-md border border-border bg-background px-2.5 py-1 text-muted-foreground">
+                    💳 Cards
+                  </span>
+                  <span className="rounded-md border border-border bg-background px-2.5 py-1 text-muted-foreground">
+                    💵 Cash at Gate
+                  </span>
+                </div>
+              </div>
+
               {items.length > 0 && (
                 <div className="flex flex-col gap-[1rem]">
                   {itemsTitle && (

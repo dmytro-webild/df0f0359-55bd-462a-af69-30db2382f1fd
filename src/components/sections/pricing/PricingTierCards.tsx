@@ -103,6 +103,31 @@ const PricingTierCards = ({ title, items, ariaLabel, className }: PricingTierCar
             </motion.li>
           ))}
         </ul>
+        <div className="mt-[clamp(2.5rem,5vw,4rem)] rounded-[calc(var(--radius-card)*0.7)] border border-border bg-card p-[clamp(1.5rem,3vw,2.5rem)] text-center shadow-sm">
+          <p className="font-mono text-[length:var(--text-label)] uppercase tracking-[var(--label-tracking)] text-accent font-semibold">
+            Accepted Payment Methods for Passes
+          </p>
+          <div className="mt-4 flex flex-wrap items-center justify-center gap-3">
+            <div className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-4 py-2 font-mono text-xs sm:text-sm font-semibold text-foreground">
+              <span className="text-emerald-500 font-bold">🟢</span> Cash App: <span className="text-accent font-bold">$ExclusiveSliding</span>
+            </div>
+            <div className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-4 py-2 font-mono text-xs sm:text-sm font-semibold text-foreground">
+              <span>💳</span> Credit & Debit Card
+            </div>
+            <div className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-4 py-2 font-mono text-xs sm:text-sm font-semibold text-foreground">
+              <span>📱</span> Venmo & Apple Pay
+            </div>
+            <div className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-4 py-2 font-mono text-xs sm:text-sm font-semibold text-foreground">
+              <span>💵</span> Cash at Entrance Gate
+            </div>
+          </div>
+          <p className="mt-4 text-[length:var(--text-body)] text-muted-foreground">
+            Have questions or need to pay via Cash App? Call or text the crew directly at{" "}
+            <a href="tel:8128008244" className="font-semibold text-foreground underline hover:text-accent transition-colors">
+              812-800-8244
+            </a>
+          </p>
+        </div>
       </div>
     </section>
   );
