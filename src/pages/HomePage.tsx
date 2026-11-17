@@ -30,10 +30,6 @@ export default function HomePage() {
           label="CREW PHONE: 812-800-8244 | CASH APP & CARDS ACCEPTED"
           title="EXCLUSIVE SLIDING"
           description="if your looking for custom builds, show & shine showcases,burn outs, vip, vendors, then this is the show for you!"
-          primaryButton={{
-            text: "Get Tickets",
-            href: "#tickets"
-          }}
           secondaryButton={{
             text: "Call Crew: 812-800-8244",
             href: "tel:8128008244"
